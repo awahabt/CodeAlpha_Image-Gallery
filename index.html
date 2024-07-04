@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Responsive | Image Gallery</title>
+    <link rel="stylesheet" href="Style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div><p style="text-align: center">Image Gallery</p></div>
+      <div id="img-container">
+        <div id="gallery">
+          <img src="1.jpg" alt="1st" />
+          <img src="2.jpg" alt="1st" />
+          <img src="3.jpg" alt="1st" />
+          <img src="4.jpg" alt="1st" />
+          <img src="5.jpg" alt="1st" />
+          <img src="6.jpg" alt="1st" />
+          <img src="7.jpg" alt="1st" />
+          <img src="8.jpg" alt="1st" />
+          <img src="9.jpg" alt="1st" />
+          <img src="10.jpg" alt="1st" />
+          <img src="11.jpg" alt="1st" />
+          <img src="12.jpg" alt="1st" />
+        </div>
+      </div>
+
+
+      <div id="lightbox">
+
+
+        <!-- Image close button -->
+        <img src="circle-xmark-solid.svg" alt="close"  id="close-btn" onclick="Close_btn()">
+
+        <!-- Main images -->
+        <img src="" alt="Image" id="lightbox-img">
+
+
+
+        <!-- Thumbnail Images Container  -->
+        <div id="img-thumbnails">
+            <!-- thumbnail will be added dynamicaly through javascript -->
+
+        </div>
+
+        <!-- left Button for previous Image  -->
+        <img src="circle-left-solid.svg" alt="left" id="prev-btn">
+
+        <!-- Right button for next Image  -->
+        <img src="circle-right-solid.svg" alt="right" id="next-btn">
+      </div>
+    </div>
+  </body>
+  <script src="script.js"></script>
+</html>
