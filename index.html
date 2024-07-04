@@ -12,45 +12,37 @@
       <div id="img-container">
         <div id="gallery">
           <img src="1.jpg" alt="1st" />
-          <img src="2.jpg" alt="1st" />
-          <img src="3.jpg" alt="1st" />
-          <img src="4.jpg" alt="1st" />
-          <img src="5.jpg" alt="1st" />
-          <img src="6.jpg" alt="1st" />
-          <img src="7.jpg" alt="1st" />
-          <img src="8.jpg" alt="1st" />
-          <img src="9.jpg" alt="1st" />
-          <img src="10.jpg" alt="1st" />
-          <img src="11.jpg" alt="1st" />
-          <img src="12.jpg" alt="1st" />
+          <img src="2.jpg" alt="2nd" />
+          <img src="3.jpg" alt="3rd" />
+          <img src="4.jpg" alt="4th" />
+          <img src="5.jpg" alt="5th" />
+          <img src="6.jpg" alt="6th" />
+          <img src="7.jpg" alt="7th" />
+          <img src="8.jpg" alt="8th" />
+          <img src="9.jpg" alt="9th" />
+          <img src="10.jpg" alt="10th" />
+          <img src="11.jpg" alt="11th" />
+          <img src="12.jpg" alt="12th" />
         </div>
       </div>
 
-
       <div id="lightbox">
-
-
         <!-- Image close button -->
-        <img src="circle-xmark-solid.svg" alt="close"  id="close-btn" onclick="Close_btn()">
+        <img src="circle-xmark-solid.svg" alt="close" id="close-btn" onclick="Close_btn()">
 
         <!-- Main images -->
         <img src="" alt="Image" id="lightbox-img">
 
+        <!-- Thumbnail Images Container -->
+        <div id="img-thumbnails"></div>
 
+        <!-- Left Button for previous Image -->
+        <img src="circle-left-solid.svg" onclick="changeImage(-1)" alt="left" id="prev-btn">
 
-        <!-- Thumbnail Images Container  -->
-        <div id="img-thumbnails">
-            <!-- thumbnail will be added dynamicaly through javascript -->
-
-        </div>
-
-        <!-- left Button for previous Image  -->
-        <img src="circle-left-solid.svg" alt="left" id="prev-btn">
-
-        <!-- Right button for next Image  -->
-        <img src="circle-right-solid.svg" alt="right" id="next-btn">
+        <!-- Right button for next Image -->
+        <img src="circle-right-solid.svg" onclick="changeImage(1)" alt="right" id="next-btn">
       </div>
     </div>
+    <script src="script.js"></script>
   </body>
-  <script src="script.js"></script>
 </html>

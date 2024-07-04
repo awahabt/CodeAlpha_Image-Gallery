@@ -1,31 +1,32 @@
-*{
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
     scroll-behavior: smooth;
 }
 
-.container{
+.container {
     height: 100vh;
     width: 100%;
     background-color: white;
-    /* display: flex; */
-    /* flex-direction: column; */
     justify-content: center;
 }
-p{
+
+p {
     padding: 50px 0;
     font-size: 50px;
     font-weight: 600;
     font-family: Arial;
 }
-#img-container{
+
+#img-container {
     width: 100%;
     height: auto;
     display: flex;
     justify-content: center;
 }
-#gallery{
+
+#gallery {
     max-width: 75%;
     height: auto;
     background-color: rgb(244, 244, 244);
@@ -38,7 +39,8 @@ p{
     margin-bottom: 100px;
     padding: 50px;
 }
-#gallery img{
+
+#gallery img {
     height: auto;
     width: 250px;
     object-fit: contain;
@@ -46,35 +48,40 @@ p{
     transition: all ease 0.3s;
     cursor: pointer;
 }
-#gallery img:hover{
+
+#gallery img:hover {
     transform: scale(1.02);
 }
 
 @media screen and (max-width: 425px) {
-    #gallery{
+    #gallery {
         border: none;
         background-color: transparent;
     }
 }
 
-
-
-#lightbox{
+#lightbox {
     width: 100%;
     height: 100%;
+    display: none;
     background: rgba(0, 0, 0, 0.8);
     justify-content: center;
     align-items: center;
     overflow: hidden;
     flex-direction: column;
+    position: fixed;
+    top: 0;
+    left: 0;
 }
-#lightbox-img{
+
+#lightbox-img {
     max-width: 80%;
     max-height: 60vh;
     box-shadow: 0 0 25px rgba(0, 0, 0, 0.8);
     border-radius: 10px;
 }
-#close-btn{
+
+#close-btn {
     height: 30px;
     width: 30px;
     cursor: pointer;
@@ -84,10 +91,12 @@ p{
     z-index: 2;
     transition: all ease 0.3s;
 }
-#close-btn:hover{
+
+#close-btn:hover {
     transform: scale(1.1);
 }
-#prev-btn{
+
+#prev-btn {
     height: 50px;
     width: 50px;
     cursor: pointer;
@@ -96,10 +105,12 @@ p{
     left: 50px;
     transition: all ease 0.3s;
 }
-#prev-btn:hover{
+
+#prev-btn:hover {
     transform: scale(1.1);
 }
-#next-btn{
+
+#next-btn {
     height: 50px;
     width: 50px;
     cursor: pointer;
@@ -108,11 +119,29 @@ p{
     right: 50px;
     transition: all ease 0.3s;
 }
-#next-btn:hover{
+
+#next-btn:hover {
     transform: scale(1.1);
 }
-#img-thumbnails{
+
+#img-thumbnails {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+}
+
+.thumbnail {
+    max-width: 100px;
+    width: 200px;
+    cursor: pointer;
+    margin-top: 40px;
+    margin-left: 5px;
+    margin-right: 5px;
+    border: 1px solid white;
+    border-radius: 4px;
+}
+
+.thumbnail:hover,
+.thumbnail.active-thumbnail {
+    opacity: 0.7;
 }
