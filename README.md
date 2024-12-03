@@ -4,6 +4,7 @@ A simple static Image Gallery website built using **HTML**, **CSS**, and **JavaS
 
 ## Screentshot 🚀
 
+![Image Gallery](https://github.com/user-attachments/assets/a5d27a2b-95f7-4888-8857-dd16c3f8437d)
 
 
 ## Technologies Used 🛠️
